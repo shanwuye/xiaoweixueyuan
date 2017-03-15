@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>任务三：三栏式布局(圣杯布局)</title>
+	<style>
+		body{padding: 10px 20px;}
+		#content{background-color:#EEEEEE;padding:20px;border:1px solid #999;height:500px;overflow:hidden;}/*用overflow来定子元素最高高度,溢出则hidden*/
+		#container{margin-left:220px;margin-right:140px;}
+		#main{width:100%;float:left;border:1px solid #999;}
+		#main p{margin:20px;text-indent:2em;line-height:28px;}
+		#left{border:1px solid #999;width:200px;float:left;margin-left:-100%;left:-222px;position:relative;}
+		#right{border:1px solid #999;width:120px;float:left;margin-left:-140px;right:-158px;position:relative;}
+		.div_in{width:58px;height:58px;border:1px solid #999;margin:20px;text-align:center;padding:10px;}
+		#main,#left,#right{background-color: #fff;}
+		.left_in{float:left;}
+		#left b{display:block;float:left;margin-top:20px;}
+	</style>
+</head>
+<body>
+	<div id="content">
+		
+		<div id="container">  <!--利用圣杯布局-->
+			<div id="main">
+				<p>
+				南昌故郡，洪都新府，星分翼轸，地接衡庐，襟三江而带五湖，控蛮荆而引瓯越。<b>物华天宝，龙光射牛斗之墟;人杰地灵，徐孺下陈蕃之榻。</b>雄州雾列，俊采星驰。台隍枕夷夏之交，宾主尽东南之美。都督阎公之雅望，棨戟遥临;宇文新州之懿范，襜帷暂住。<a href="http://ife.baidu.com">十旬休假，胜友如云;千里逢迎，高朋满座。</a>腾蛟起凤，孟学士之词宗，紫电青霜，王将军之武库。家君作宰，路出名区;童子何知，躬逢胜饯。
+				</p>
+				<p>
+				南昌故郡，洪都新府，星分翼轸，地接衡庐，襟三江而带五湖，控蛮荆而引瓯越。<b>物华天宝，龙光射牛斗之墟;人杰地灵，徐孺下陈蕃之榻。</b>雄州雾列，俊采星驰。台隍枕夷夏之交，宾主尽东南之美。都督阎公之雅望，棨戟遥临;宇文新州之懿范，襜帷暂住。<a href="http://ife.baidu.com">十旬休假，胜友如云;千里逢迎，高朋满座。</a>腾蛟起凤，孟学士之词宗，紫电青霜，王将军之武库。家君作宰，路出名区;童子何知，躬逢胜饯。
+				</p>
+			</div>
+
+			<div id="left">
+				<div class="div_in left_in">团队logo</div><b>团队名称</b>
+			</div>
+
+			<div id="right">
+				<div class="div_in">个人logo</div>
+				<div class="div_in">个人logo</div>
+				<div class="div_in">个人logo</div>
+				<div class="div_in">个人logo</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
